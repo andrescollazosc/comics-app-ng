@@ -1,0 +1,10 @@
+<app-spinner class="fa-5x" *ngIf="!isLoading">
+</app-spinner>
+
+<div class="row" *ngIf="isLoading">
+  <app-comics-card
+    *ngFor="let card of comicsItemsResult"
+    [dataCard]="card"
+    class="col-12 col-sm-12 col-md-5 col-lg-4"
+  ></app-comics-card>
+</div>

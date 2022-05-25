@@ -1,0 +1,40 @@
+@import "../../../../styles/typography";
+
+.container-comic-card {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 3px 0 rgb(39 58 80 / 30%);
+  margin-bottom: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: Josefin, sans-serif;
+  transition: all .5s;
+  text-decoration: none;
+
+
+  &__container-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  &__panel-text {
+    padding: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #273A50;
+  }
+}
+
+.container-comic-card:hover {
+  box-shadow: 4px 4px 10px 0 rgba(39, 58, 80, 0.3);
+}

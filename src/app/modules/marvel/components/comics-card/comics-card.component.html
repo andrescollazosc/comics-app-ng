@@ -1,0 +1,8 @@
+<a class="container-comic-card" [routerLink]="['../comic', dataCard.id]">
+    <div class="container-comic-card__container-image">
+        <img [src]="pathImage" alt="">
+    </div>
+    <div class="container-comic-card__panel-text">
+        {{ dataCard.title }}
+    </div>
+</a>

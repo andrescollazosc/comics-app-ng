@@ -1,0 +1,16 @@
+<app-spinner class="fa-5x" *ngIf="!isLoading"> </app-spinner>
+
+<h1 *ngIf="isLoading">{{ comicItemResult?.title }}</h1>
+
+<div class="container-comic" *ngIf="isLoading">
+  <div class="container-comic__comic-image">
+    <img [src]="pathImage" alt="" />
+  </div>
+
+  <div class="container-comic__comic-text">
+    <p>
+      {{ comicItemResult?.description }}
+    </p>
+    <p class="mt-10 container-comic__comic-price">Price: {{ price }}</p>
+  </div>
+</div>
